@@ -27,22 +27,16 @@ class LoCoCiParser{
 	public LoCoCiParser(){	
 	}
 	
+/**
+	 * Method for Scraping the path.Splitting takes place here.
+	 * @param path
+	 * @return HashMap evaluated from the respective functions called during this methods function.
+	 * 
+	 */
  public HashMap<String,String> scraping_path(String path){
 	 
 
  String[] distinct = path.split("/");
- /** 
-  * string split
-  * check for the string component of the last indicating pattern
-  * if co: country
-  * if ci : city
-  * else lo:locality
-  * each come with different ids
-  * Country : country_id, surgery id
-  * City : city_id,surgery_id
-  * Locality : locality_id,city _id, surgery_id
-  */
-
  String com = distinct[distinct.length -1];
  String[] component = com.split("-");
   if(component[0].equals("co")){
@@ -62,8 +56,14 @@ class LoCoCiParser{
    return null;
 
 }
+
+ /**
+  * Method for the country_type
+  * @param component
+  * @return a HashMap containing two key-value pairs
+  * 
+  */
  
-//****************Method for Country********************
  public HashMap<String,String> country_type(String[] component){
    String country_id = component[1];
    String surgery_id = component[2];
@@ -76,7 +76,11 @@ class LoCoCiParser{
    return co_su;
 }
 
-//****************Method for City***********************
+ /**
+  * Method for city_type
+  * @param component
+  * @return Hashmap containing two key-value pairs
+  */
 public HashMap<String,String> city_type(String[] component){
    String city_id = component[1];
    String surgery_id = component[2];
@@ -90,7 +94,11 @@ public HashMap<String,String> city_type(String[] component){
    
 }
 
-//*****************Method for locality******************
+/**
+ * Method for localtype
+ * @param component
+ * @return a HashMap containing three key-value pairs
+ */
 public HashMap<String,String> local_type(String[] component){
    String locality_id= component[1];
    String city_id = component[2];
