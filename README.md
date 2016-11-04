@@ -4,13 +4,13 @@ The java file LoCoCiParser contains all the relevant methods required to parse o
 for the city or country or locality.
 
 Tips to execute the process:
-compile the TestTheUrl.java
+compile the TestTheUrl.java::
 javac TestTheUrl.java
 
-run the TestTheUrl.java file
+run the TestTheUrl.java file::
 java TestTheUrl
 
-You will be asked to enter the URL to parse:
+You will be asked to enter the URL to parse::
 Enter the URL to Parse??
 <---Enter the URL---->
 Press enter
