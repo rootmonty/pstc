@@ -1,7 +1,7 @@
 # PSTAKECARE
 Exercises/Tasks
 
-The Project contains the following java class:
+The Project contains the following java class to be executed to get the parsed result for different types of urls:
 1.TestTheUrl
 
 => TestTheUrl : Gives you the respective Ids for a given type of URL.It segregates the city,country and locality based domains and respectively gives you their city,country and locality ids from the path given
