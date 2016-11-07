@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-public class TestParse extends LoCoCiParser {
+public class TestParse extends UrlParserClass {
 
-	LoCoCiParser testobject = new LoCoCiParser();
+	UrlParserClass testobject = new UrlParserClass();
 	
 	@Test
 	public void check_scrapingpath(){
