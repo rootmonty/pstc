@@ -1,13 +1,10 @@
 # PSTAKECARE
 Exercises/Tasks
 
-The Project contains two main java classes :
+The Project contains the following java class:
 1.TestTheUrl
-2.ParseUrl
 
 => TestTheUrl : Gives you the respective Ids for a given type of URL.It segregates the city,country and locality based domains and respectively gives you their city,country and locality ids from the path given
-
-=> ParseUrl : This class is contained in a directory named UrlParser.It is a script for specific type of URLs which are needed to be parsed for respective ids but under the context of mentioned Surgeries in the domain itself.(for a developer)
 
 Instructions to run the script::
 
@@ -26,8 +23,8 @@ Surgery_Id	799
 City_Id	  3
 Locality_Id	148
 
-Repeat the procedure from 14- 18 for UrlParser as well ::(in its directory)
-You will get display as ::(enter the url and press enter)
+Another Example::
+
 Enter the Url to parse
 https://pstakecare.com/category-eye-surgeries-in-andheri-west-mumbai/ci-3-3-1
 
